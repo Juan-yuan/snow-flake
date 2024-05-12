@@ -33,4 +33,7 @@
 4. run command: python3 snow_sample_external.py
 5. re-load snow flake, we can see crime2.csv values are successfully uploaded into snow flake MY_S3_STAGE file.
 ![alt text](image-9.png)
+6. add CREDENTIALS to snow_sample.sql under external_stage_load folder
+![alt text](image-10.png)
+
 
