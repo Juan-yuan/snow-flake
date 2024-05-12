@@ -28,12 +28,12 @@
 1. run command: cd external_stage_load
 2. go to your AWS console, create a bucket in S3 and upload file crime2.csv into this bucket:
 ![alt text](image-7.png)
-3. go to your AWS IAM, create a new user to get the 'credentials' and put values into snow_sample.sql file STAGE my_S3_stage
+3. go to your AWS IAM, create a new user to get the key id and password and put values into snow_sample.sql file STAGE my_S3_stage
 ![alt text](image-8.png)
 4. run command: python3 snow_sample_external.py
 5. re-load snow flake, we can see crime2.csv values are successfully uploaded into snow flake MY_S3_STAGE file.
 ![alt text](image-9.png)
-6. add CREDENTIALS to snow_sample.sql under external_stage_load folder
+6. add key id and password to snow_sample.sql under external_stage_load folder
 ![alt text](image-10.png)
 
 
