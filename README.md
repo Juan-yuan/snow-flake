@@ -11,3 +11,14 @@
 7. select CRIME_LITE table values and stages:
 ![alt text](image-3.png)
 ![alt text](image-4.png)
+8. create a .env file with values:
+  SF_USER=kittyyuan
+  PASSWORD=Shanjun@007
+  ACCOUNT=jahbpox-fo48556
+  TABLE=CRIME_LITE
+  FILE=crime2.csv
+  TRUNCATE=YES
+9. install package run command:  pip3 install python-dotenv
+![alt text](image-5.png)
+10. run command to execute snow_sample_env.py file, command: python3 snow_sample_env.py
+![alt text](image-6.png)
