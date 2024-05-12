@@ -1,4 +1,5 @@
 ## Let's start
+### Way 1: Upload data internally to Snowflake
 1. run command to init project: python3 -m venv .
 2. install snowflake-connector-python: pip3 install snowflake-connector-python
 3. activate project: source bin/activate
@@ -22,3 +23,14 @@
 ![alt text](image-5.png)
 10. run command to execute snow_sample_env.py file, command: python3 snow_sample_env.py
 ![alt text](image-6.png)
+
+### Way 2: Upload data externally(AWS s3) to Snowflake
+1. run command: cd external_stage_load
+2. go to your AWS console, create a bucket in S3 and upload file crime2.csv into this bucket:
+![alt text](image-7.png)
+3. go to your AWS IAM, create a new user to get the 'credentials' and put values into snow_sample.sql file STAGE my_S3_stage
+![alt text](image-8.png)
+4. run command: python3 snow_sample_external.py
+5. re-load snow flake, we can see crime2.csv values are successfully uploaded into snow flake MY_S3_STAGE file.
+![alt text](image-9.png)
+
